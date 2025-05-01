@@ -1,0 +1,21 @@
+
+# Ignorar ficheiro de ligação à base de dados
+helpers/base_dados_helper.php
+
+# Ignorar ficheiros e pastas típicos de sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar pastas de uploads temporários (caso existam)
+uploads/
+temp/
+tmp/
+
+# Ignorar ficheiros de base de dados não estruturais
+*.sqlite
+*.sql
+
+# Ignorar ficheiros de backup
+*.bak
+*.old
+*.zip

@@ -1,0 +1,607 @@
+body{
+    max-width: 1600px;
+    min-width: 360px;
+    margin: auto;
+    color:#333333;
+}
+header.logo{
+    width: 285px;
+    transform: translateY(-20px);
+}
+
+header nav{ margin-left: -40px;}
+header nav a{
+    font-family: "Poppins-regular";
+    color: #333333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    border-bottom: 5px solid transparent;
+    padding: 13px 0px;
+}
+header nav a:hover, header nav a.active{
+    border-bottom: 5px solid #333333;
+}
+
+header .dropdown-menu{
+    border-radius: 0px;
+    border: none;
+    background-color: rgba(51,  51 , 51, 90%);
+    padding: 0px;
+    max-width: 275px;
+}
+header .dropdown-menu li{border-bottom: 1px solid white;}
+header .dropdown-menu a{ 
+    color: white;
+    font-size: 14px;
+    padding: 20px 25px;
+    font-family: "Poppins-regular";
+}
+
+
+header .dropdown-menu a:hover, header .dropdown-menu a.active{
+    border-bottom: 0px;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins-bold";
+}
+
+.navbar_row{
+    box-shadow: 0px 7px 8px 0px rgba(0, 0, 0, 0.45);
+    position: relative;
+    z-index: 100;
+}
+
+
+#carousel_topo img{
+    height: 48.5vw;
+    max-height: 776px;
+    min-height: 259px;
+    object-fit: cover;
+    object-position: center;
+}
+#carousel_topo .carousel-indicators button{
+    opacity: 1;
+    width: 71px;
+    height: 13px;
+}
+#carousel_topo .carousel-indicators button.active{background-color: #F9963B;}
+
+header .banner{
+    height: 29vw;
+    max-height: 463px;
+    /* max-height: 259px; */
+    object-fit: cover;
+    object-position: center;
+}
+
+.linha_laranja, .linha_branca{
+    background-color: #F9963B;
+    width: 78px;
+    height: 3px;
+    margin: auto;
+}
+.linha_branca{ background-color: white;}
+.titulo{
+    font-family: "Poppins-regular";
+    font-size:38px;
+    line-height: 58px;
+}
+.subtitulo{
+    font-family: "Poppins-light";
+    font-size:38px;
+    line-height: 58px;
+}
+.texto{
+    font-family: "Poppins-light";
+    font-size: 18px;
+    color: #333333;
+
+}
+.botao_vermais, .botao_voltardestaques{
+    font-family: "Poppins-light";
+    font-size:15px;
+    text-transform: uppercase;
+    border: 2px solid #333333;
+    background-color: transparent;
+    width: 194px;
+    height: 46px;
+    border-radius: 25px;
+}
+.botao_voltardestaques{
+    width: 312px;
+    height: 61px;
+    font-size:20px;
+    border-radius: 40px;
+}
+.botao_vermais:hover,  .botao_voltardestaques:hover{
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.destaque{width: 350px;}
+.destaque.grande{
+    width: 540px;
+    height: 726px;
+    display: flex;
+    flex-direction: column;
+}
+.noticia{
+    width: 540px;
+}
+.noticia img{
+    width: 100%;
+    height: 357px;
+    object-fit: cover;
+    object-position: center;
+}
+.noticia .conteudo{
+    border: 1px solid #333333;
+    padding: 10px 25px;  
+}
+.noticia .texto{
+    font-family: "poppins-light";
+    font-size: 18px;
+    width: 463px;
+    height: 192px;
+}
+
+.imagemquemsomos, .imagemcf{
+    width: 100%;
+    height: 524px;
+}
+.imagemempreendimento, .imagemcferias{
+    width: 635px;
+}
+.imagemcferias{
+    height: 357px;
+}
+.destaque img{
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+    object-position: center;
+}
+.destaque.grande img{height: 350px;}
+.destaque .conteudo{
+    border: 1px solid #333333;
+    height: 210px; 
+}
+.destaque.grande .conteudo{
+    border: 1px solid #333333;
+    height: auto;
+    flex-grow: 1;
+    padding: 0px 35px;
+}
+
+.destaque .titulo, .noticia .titulo{
+    font-size: 25px;
+    line-height: 32px;
+}
+.destaque .botao_vermais{
+    width: 128px;
+    height: 35px;
+    font-size: 12px;
+    transform: translateY(17.5px);
+    background-color: white;
+    border: 1px 3;
+}
+.destaque .botao_vermais:hover{
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+.paginacao a{
+    text-decoration: none;
+    border: 1px solid #333333;
+    font-family: "Poppins-light";
+    font-size: 24px;
+    color: #333333;
+    border-radius: 5px;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.paginacao a.active, .paginacao a:hover{
+    color: white;
+    background-color: #333333;
+}
+.paginacao a.setas{font-size: 28px;}
+
+
+.contacto-info  p {
+    margin: 0; 
+    padding: 0; 
+}
+.contacto-info .morada p {
+    margin: 0; 
+    line-height: 1.2; 
+}
+
+.contacto-info .titulo {
+    font-family: "Poppins-medium";
+    font-size: 25px; 
+    margin-bottom: 0px;
+}
+
+.contacto-info .texto {
+    font-family: "Poppins-regular";
+    font-size: 24px; 
+    color: #333333; 
+    display: block; 
+}
+
+.contacto-info .texto a {
+    text-decoration: none; 
+    color: #333333; 
+}
+.contacto-info div{ margin-bottom: 15px;}
+
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+  }
+  .formulario label {
+    font-family: "Poppins-medium";
+    font-size: 25px;
+  }
+  .formulario input, 
+  .formulario textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  .formulario textarea {
+    resize: vertical;
+    height: 100px;
+  }
+  .formulario p{
+    font-family: "Poppins-light";
+    font-size: 13px;
+  }
+  .formulario .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  .formulario .checkbox input {
+    margin-right: 5px;
+    margin-top: 7px;
+  }
+  .formulario .copiadados{
+    font-family: "Poppins-light";
+    font-size: 12px;
+  }
+  .formulario button {
+    font-family: "Poppins-light";
+    font-size:15px;
+    text-transform: uppercase;
+    border: 2px solid #333333;
+    background-color: transparent;
+    width: 171px;
+    height: 46px;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+  .formulario button:hover {
+    background-color: #333333;
+    color: white;
+    cursor: pointer;
+}
+
+footer .contactos{
+    height: 565px;
+    background-image: url("../imagens/FooterContactos.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: "Poppins-regular";
+}
+
+footer.contactos .sombra{background-color: rgba(0, 0, 0, 0.65);}
+footer .contactos .titulo{ font-size: 43px; margin: auto;}
+footer .contactos .caixa_icone{font-size: 24px}
+footer .contactos .icone{
+    width: 75px;
+    height: 75px;
+}
+
+footer .mapa{height: 513px;}
+
+footer .facebook{
+    height: 476px;
+    background-image: url(../imagens/FooterFacebook.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-family: "Poppins-regular";
+}
+footer .facebook .caixa_icone{ font-size: 29px;}
+footer .facebook .icone{
+    width: 100px;
+    height: 100px;
+}
+.linha_branca_grande{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+}
+footer nav a, footer{
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 7px;
+    
+}
+footer nav a:hover, footer nav a.active{color: #FC8B3B;}
+footer nav .dropdown{
+    margin-top: 8px;
+}
+footer nav .dropdown-menu a{
+    margin-left: 0px;
+    border-bottom: 1px solid #333333;
+}
+footer nav .dropdown-menu a:hover, footer nav .dropdown-menu a.active{
+    margin-left: 0px;
+    background-color: #F9963B;
+}
+footer .copyright{ 
+    font-size: 15px;
+    font-family: "Poppins-regular";
+}
+footer .copyright a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* BOOTSTRAP XL */
+
+@media all and (width < 1200px){
+
+    header .logo{
+        width: 220px;
+        transform: translateX(-20px);
+    }
+
+    header nav a{
+        font-family: "Poppins-regular";
+        font-size: 12px;
+        border-bottom: 5px solid transparent;
+        padding: 13px 0px;
+    }
+    footer .contactos .titulo{ font-size: 28px;}
+    footer .contactos .caixa_icone{font-size: 20px}
+    header .banner{height: 72vw;}
+    
+
+}
+/* BOOTSTRAP LG */
+
+@media all and (width < 992px){
+    header nav{margin-left: 0px;}
+    header .logo{
+        width: 220px;
+        transform: translateX(0px);
+    }
+    header .navbar-toggler{
+        border:none;
+        box-shadow: none;
+        outline: none;
+    }
+    header .navbar-toggler:focus{
+        border:none;
+        box-shadow: none;
+        outline: none;
+    }
+    header nav a, header nav a:hover, header nav a.active{border-bottom: none;}
+    .navbar_row {padding: 12.5px 0px;}
+
+    header .navbar-collapse{ 
+        background-color: rgba(51,  51 , 51, 90%);
+        box-sizing: border-box;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+    }
+    header .navbar-collapse a{
+        color: white;
+        font-size: 14px;
+        opacity: 1;
+        border-bottom: 1px solid white;
+        padding: 10px 35px;
+    }
+    header .navbar-collapse .nav-link:hover, .navbar-collapse .nav-link.active, .navbar-collapse .nav-link:focus {
+    font-family: "Poppins-bold" !important;
+    font-size: 16px;
+    border-bottom: 1px solid white !important;
+    color: white !important;
+    }
+
+    header .dropdown-menu{
+        width: 100%;
+        max-width: unset;
+        background-color: white;
+        padding: 0px 50px;
+        text-align: left;
+
+    }
+    header .dropdown-menu a{
+        color: #333333;
+        font-size: 14px !important;
+        border-bottom: 1px solid #333333;
+        padding: 10px ;
+    }
+    header .dropdown-menu a.active, header .dropdown-menu a:hover{
+        color: #F9963B !important;
+        font-family: "Poppins-regular";
+        border-bottom: 1px solid #333333 !important;
+    }
+    
+    #ultimo:hover{
+        border-bottom: 0px !important;
+    }
+    .imagemquemsomos, .imagemcf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 294px;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .noticia{
+        width: 286px;
+        height: 534px;
+    }
+    .noticia img{
+        width: 100%;
+        height: 189px;
+    }
+    .noticia .conteudo{
+        font-family: "Poppins-regular";
+        font-size: 17px;
+        border: 1px solid #333333;
+        padding: 10px 25px;  
+    }
+    .noticia .texto{
+        font-family: "poppins-light";
+        font-size: 13px;
+        width: 242px;
+        height: 244px;
+    }
+    .formulario button{
+        margin-top: 30px;
+    }
+    
+
+    footer .contactos{height: 573px;}
+    footer .contactos .titulo{ font-size: 20px;}
+    footer .contactos .caixa_icone{font-size: 18px}
+    footer .contactos .icone{
+        width: 40px;
+        height: 40px;
+    }
+    
+    footer .mapa{height: 323px;}
+    
+}
+
+/* BOOTSTRAP MD */
+@media all and (width < 768px){
+
+    
+    #carousel_topo .carousel-indicators button{
+        opacity: 1;
+        width: 37px;
+        height: 7px;
+    }
+    .linha_laranja, .linha_branca{width: 47px;}
+    .titulo,.subtitulo{
+        font-size:28px;
+        line-height: 35px;
+    }
+
+    .imagemquemsomos, .imagemcf{
+        width: 250px;
+    }
+
+    .texto{
+        font-size: 13px;
+    }
+    .botao_vermais{
+        font-size:10px;
+        width: 105px;
+        height: 29px;
+    }
+
+    .destaque, .destaque.grande{
+        width: 286px; 
+        height: 384px;
+    }
+    .destaque img, .destaque.grande img{height: 208px;}
+    .destaque .conteudo, .destaque.grande .conteudo{
+        height: 180px;
+        padding: 0px, 24px;
+    }
+    .destaque .titulo{
+        font-size: 17px;
+        line-height: 24px;
+    }
+    .destaque .botao_vermais{
+        width: 105px;
+        height: 29px;
+        font-size: 10px;
+        transform: translateY(14.5px);
+    }
+
+    .paginacao a{
+        font-size: 16px;
+        width: 25px;
+        height: 25px;
+        border-radius: 3px;
+    }
+    .paginacao a.active, .paginacao a:hover{
+        color: white;
+        background-color: #333333;
+    }
+    .paginacao a.setas{font-size: 20px;}
+    .botao_voltardestaques{
+        font-size: 12px;
+        width: 180px;
+        height: 45px;
+    }
+    .imagemempreendimento, .imagemcferias{
+        width: 400px;
+        height: 250px;
+    }
+    footer .facebook{height: 320px;;}
+    footer .facebook .caixa_icone{ font-size: 18px;}
+    footer .facebook .icone{
+        width: 40px;
+        height: 40px;
+    }
+    footer .copyright{font-size: 11px;}
+}
+
+/* BOOTSTRAP SM */
+
+@media all and (width < 576px){
+
+    header .logo{
+        width: 180px;
+    }
+    #carousel_topo img{height: 69vw;}
+    #carousel_topo .carousel-indicators button{margin: 2px;}
+    .titulo{
+        font-size:20px;
+        line-height: 30px;
+    }
+    .subtitulo{
+        font-size:18px;
+    }
+    .imagemquemsomos, .imagemcf{
+        width: 149px;
+        height: 223px;
+    }
+    .imagemempreendimento, .imagemcferias{
+        width: 286px;
+        height: 190px;
+    }
+}
+
