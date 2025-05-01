@@ -94,7 +94,7 @@ if ($form) {
             </div>
         </div>
 
-
+        
         <div class="col-12 col-lg-7 formulario">
             <form action="" method="POST">
                 <label for="nome">*NOME</label>
@@ -132,7 +132,7 @@ if ($form) {
                     <button type="submit">ENVIAR</button>
                 </div>
             </form>
-
+            
             <?php if ($mensagem_enviada): ?>
                 <div class="alerta <?= $mensagem_enviada['tipo'] ?>">
                     <?= $mensagem_enviada['mensagem'] ?>
